@@ -1,9 +1,9 @@
-body{
+body {
   box-sizing: border-box;
   background-color: #FFFDD0;
   background-color: hsl(27, 66%, 92%);
   max-width: 100vw;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,10 +12,10 @@ body{
   font-family: 'DM Sans', sans-serif;
 }
 
-
-#balance-div{
+#balance-div {
   width: 540px;
   height: 125px;
+    background-color: pink;
   background-color: hsl(10, 79%, 65%);
   margin-bottom: 25px;
   border-radius: 15px;
@@ -28,27 +28,23 @@ body{
   align-items: center;
 }
 
-.internal-div{
-
-}
-
-.balance-h6{
-  margin: 5px 0 0px 0;
+.balance-h6 {
+  margin: 5px 0 0 0;
   font-size: 18px;
 }
 
-.balance-h3{
+.balance-h3 {
   margin: 5px 0 0 0;
   font-size: 30px;
 }
 
-.image-in-balance-div{
- width: 72px;
- height: 48px;
- object-fit: contain;
+.image-in-balance-div {
+  width: 72px;
+  height: 48px;
 }
 
-#spending-avg{
+
+#spending-avg {
   height: 500px;
   width: 540px;
   background-color: white;
@@ -60,25 +56,74 @@ body{
   color: hsl(25, 47%, 15%);
 }
 
-h2{
+h2 {
   margin-top: 0;
   font-weight: 700;
 }
 
-.barchart-div{
-  height: 170px;
-  width: 460.5px
-
+.barchart-div {
+  height: 220px;
+  width: 460.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.bar{
-  width: 20px;
+.bar {
+  width: 8px;
   cursor: pointer;
 }
 
-
-hr{
+hr {
   height: 2px;
   background-color: grey;
   background-color: hsl(28, 10%, 53%);
+  margin: 30px 0;
+}
+
+.para-above-balance{
+  color: grey;
+}
+
+.total-spending {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.spendings {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-balance{
+  font-size: 3rem;
+  font-weight: 700;
+  color: brown;
+  color: hsl(25, 47%, 15%);
+}
+
+.spendings-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spendings-para {
+  margin: 0;
+}
+
+.hover:hover{
+  background-color: #F6B092;
+  cursor: pointer;
+}
+
+.hover1:hover{
+  background-color: #E0FFFF;
+  cursor: pointer;
+}
+
+.show{
+  
 }
